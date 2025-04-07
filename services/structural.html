@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structural Engineering Services - Brainiac Engineering</title>
+    <style>
+        :root {
+            --primary: #2FA6AC;
+            --secondary: #F63A48;
+            --black: #000000;
+            --white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--black);
+        }
+
+        .header {
+            background-color: var(--white);
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            height: 50px;
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--black);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .service-hero {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+        }
+
+        .service-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-content {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .service-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+        }
+
+        .service-description {
+            margin-bottom: 3rem;
+        }
+
+        .service-description h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .service-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .feature-card {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .feature-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .cta-section {
+            background-color: var(--secondary);
+            color: var(--white);
+            padding: 4rem 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--white);
+            color: var(--secondary);
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        .footer {
+            background-color: var(--black);
+            color: var(--white);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .service-hero h1 {
+                font-size: 2rem;
+            }
+
+            .service-features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="../index.html">
+                <img src="../assets/BrainiacEngineering.png" alt="Brainiac Engineering Logo" class="logo">
+            </a>
+            <div class="nav-links">
+                <a href="../index.html#services">Services</a>
+                <a href="../index.html#about">About</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="service-hero">
+        <h1>Structural Engineering Services</h1>
+        <p>Comprehensive structural solutions for your construction projects</p>
+    </section>
+
+    <main class="service-content">
+        <img src="../assets/structural.jpg" alt="Structural Engineering" class="service-image">
+        
+        <div class="service-description">
+            <h2>About Our Structural Engineering Services</h2>
+            <p>Our structural engineering team provides comprehensive solutions for buildings and infrastructure projects. We combine technical expertise with innovative design approaches to ensure your structures are safe, efficient, and sustainable.</p>
+        </div>
+
+        <div class="service-features">
+            <div class="feature-card">
+                <h3>Structural Analysis</h3>
+                <p>Advanced analysis of structural systems using state-of-the-art software and methodologies.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Design & Documentation</h3>
+                <p>Detailed structural design and comprehensive documentation for construction.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Construction Support</h3>
+                <p>On-site support and consultation during the construction phase.</p>
+            </div>
+        </div>
+
+        <div class="service-description">
+            <h2>Our Approach</h2>
+            <p>We take a holistic approach to structural engineering, considering factors such as:</p>
+            <ul>
+                <li>Safety and compliance with building codes</li>
+                <li>Cost-effectiveness and material optimization</li>
+                <li>Sustainability and environmental impact</li>
+                <li>Long-term durability and maintenance</li>
+            </ul>
+        </div>
+    </main>
+
+    <section class="cta-section">
+        <h2>Ready to Start Your Structural Project?</h2>
+        <p>Let's discuss how we can help bring your vision to life.</p>
+        <a href="../index.html#contact" class="cta-button">Contact Us</a>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Brainiac Engineering. All rights reserved.</p>
+    </footer>
+</body>
+</html> 
