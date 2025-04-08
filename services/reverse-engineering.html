@@ -48,6 +48,18 @@
             width: auto;
         }
 
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-text {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--black);
+            margin-left: 1rem;
+        }
+
         .nav-links {
             display: flex;
             gap: 2rem;
@@ -190,9 +202,12 @@
 <body>
     <header class="header">
         <nav class="nav-container">
-            <a href="../index.html">
-                <img src="../assets/BrainiacEngineering.png" alt="Brainiac Engineering Logo" class="logo">
-            </a>
+            <div class="logo-container">
+                <a href="../index.html">
+                    <img src="../assets/logo_brainiac_notext.png" alt="Brainiac Engineering Logo" class="logo">
+                </a>
+                <span class="logo-text">Brainiac Engineering</span>
+            </div>
             <div class="nav-links">
                 <a href="../index.html#services">Services</a>
                 <a href="../index.html#about">About</a>
